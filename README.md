@@ -9,15 +9,21 @@ A FastAPI backend that accepts a **zipped Shapefile** or a **KML** file, extract
 Requires Python 3.10+ (developed on 3.12).
 
 ```bash
-python -m venv .venv 
+# 1. Create a virtual environment
+python -m venv .venv
 
-source .venv/Scripts/activate
+# 2. Activate the virtual environment
+.venv\Scripts\activate
 
+# 3. Install development dependencies
 pip install -r requirements-dev.txt
 
+# 4. Start the FastAPI development server
 uvicorn app.main:app --reload
+
 # Interactive docs:  http://127.0.0.1:8000/docs
 ```
+Interactive API explorer (optional): with the server running, `python test.py` opens a menu for every endpoint — pick a route, supply a file path or id when asked, and see the JSON response. Requires `requests` (`pip install requests` if it is not already installed).
 
 Run the tests:
 
@@ -25,7 +31,7 @@ Run the tests:
 pytest
 ```
 
-Interactive API explorer (optional): with the server running, `python test.py` opens a menu for every endpoint — pick a route, supply a file path or id when asked, and see the JSON response. Requires `requests` (`pip install requests` if it is not already installed).
+
 
 Docker:
 

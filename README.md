@@ -23,7 +23,11 @@ uvicorn app.main:app --reload
 
 # Interactive docs:  http://127.0.0.1:8000/docs
 ```
-Interactive API explorer (optional): with the server running, `python test.py` opens a menu for every endpoint — pick a route, supply a file path or id when asked, and see the JSON response. Requires `requests` (`pip install requests` if it is not already installed).
+Interactive API explorer (optional): with the server running, 
+```bash
+pytest
+``` 
+opens a menu for every endpoint — pick a route, supply a file path or id when asked, and see the JSON response. Requires `requests` (`pip install requests` if it is not already installed).
 
 Run the tests:
 

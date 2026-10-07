@@ -9,7 +9,10 @@ A FastAPI backend that accepts a **zipped Shapefile** or a **KML** file, extract
 Requires Python 3.10+ (developed on 3.12).
 
 ```bash
-python -m venv .venv && source .venv/bin/activate
+python -m venv .venv 
+
+source .venv/Scripts/activate
+
 pip install -r requirements-dev.txt
 
 uvicorn app.main:app --reload

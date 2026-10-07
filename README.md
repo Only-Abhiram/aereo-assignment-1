@@ -25,7 +25,7 @@ uvicorn app.main:app --reload
 ```
 Interactive API explorer (optional): with the server running, 
 ```bash
-pytest
+python test.py
 ``` 
 opens a menu for every endpoint — pick a route, supply a file path or id when asked, and see the JSON response. Requires `requests` (`pip install requests` if it is not already installed).
 

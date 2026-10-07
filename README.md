@@ -23,7 +23,7 @@ uvicorn app.main:app --reload
 
 # Interactive docs:  http://127.0.0.1:8000/docs
 ```
-Interactive API explorer (optional): with the server running, 
+Interactive API explorer (optional): with the server running, in a new terminal
 ```bash
 python test.py
 ``` 
